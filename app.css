@@ -2,7 +2,7 @@
 /*copyright bar */
 footer{
     clear: both;
-    background-color: black;
+    background-color: #333;
     color: darkgray;
     padding: 20px;
     text-align: center;
@@ -24,18 +24,10 @@ h1{
     color: white;
 }
 
-/*login button*/
-h2{
-    font-size: 50%;
-    float: right;
-    padding-top: 50px;
-    padding-right: 4px;
-}
 
 /*page header*/
 header{
     margin-top: 0;
-    background-image: url("./images/tripperfphead.jpg");
     height: 250px;
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -117,4 +109,41 @@ a {
 
 body {
     margin: 0px;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links inside the navbar tripper */
+.navbar b {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 4px;
+    padding-top: 4px;
+    max-height: 30px
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Main content */
+.main {
+    margin-top: 48px; /* Add a top margin to avoid content overlay */
 }
