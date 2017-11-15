@@ -31,13 +31,11 @@ h1{
 header{
     margin-top: 0;
     font-size: 400%;
+    background-color: rgba(29, 88, 32, 0.938);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    height: 0%;
-    background-image: url("./images/bled.jpg");
-    background-size: cover;
-    background-position: center center;
-    padding-bottom: 41.36%;
+    height: 100%;
+    padding-bottom: 0;
 }
 
  /* Bordered form */
@@ -158,7 +156,7 @@ body {
 .quotesec {
     text-align: center;
     background-color: rgba(42, 121, 46, 0.938);
-    font-size: 200%;
+    font-size: 175%;
     width: 100%;
     height:20%;
     line-height: 80px;
@@ -177,4 +175,79 @@ padding: 0;
     margin: 0 auto;
     max-height: 100%;
     width: 100vw;
+
+/*quote box front page*/
+.aboutme {
+    text-align: center;
+    background-color: rgba(42, 121, 46, 0.938);
+    font-size: 125%;
+    width: 100%;
+    height:20%;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+/*for image slideshow*/
+.slider-holder
+{
+    width: 800px;
+    height: 400px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder
+{
+    width: 2400px;
+    background-color: red;
+    height: 400px;
+    clear: both;
+    position: relative;
+    
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slider-image
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slider-image-1:target ~ .image-holder
+{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder
+{
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder
+{
+    left: -1600px;
+}
+
+.button-holder
+{
+    position: relative;
+    top: -20px;
+}
+
+.slider-change
+{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: brown;
 }
