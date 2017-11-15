@@ -169,8 +169,12 @@ p {
     margin: 0;
 }
 
-/*night map fp*/
-.nightmappic {
-    width: 100%;
-    height:512px;
+
+
+img {
+padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    width: 100vw;
 }
