@@ -78,8 +78,19 @@
         </textarea>
     </aside>  
     <footer>
-        Copyright 2017
-    </footer>
+      Copyright 2017
+      <div class="signout">
+         <a href="#" onclick="signOut();">Sign out</a>
+         <script>
+           function signOut() {
+             var auth2 = gapi.auth2.getAuthInstance();
+             auth2.signOut().then(function () {
+               console.log('User signed out.');
+             });
+           }
+         </script>
+      </div>
+ </footer>
   </div>
 </body>
 </html>
