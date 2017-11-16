@@ -167,13 +167,25 @@ p {
     margin: 0;
 }
 
+.flex-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+  }
+
+.flex-container>div {
+    background-color: #ffffff;
+    margin: 5px;
+    padding:20px;
+    font-size: 30px;
+}
 
 img {
 padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 100%;
-    width: 100vw;
+    max-height: auto;
+    width: 75%;
 }
 
 /*quote box front page*/
