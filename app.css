@@ -29,13 +29,12 @@ h1{
 
 /*page header*/
 header{
-    margin-top: 0;
-    font-size: 350%;
     background-color: rgba(255, 255, 255, 0.658);
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
 }
 
  /* Bordered form */
@@ -110,6 +109,11 @@ a {
     max-height: 800px;
     top: 0%;
 }
+b {
+    color: inherit;
+    text-decoration: inherit;
+    text-align: center;
+}
 
 body {
     margin: 0px;
@@ -118,7 +122,7 @@ body {
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: #ffffff;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -154,10 +158,11 @@ body {
 /*quote box front page*/
 .quotesec {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: #ffffff;
     color: darkslategray;
     font-size: 175%;
-    width: 100vw;
+    width: 75%;
+    margin: auto;
     height:20%;
     line-height: 80px;
     vertical-align: middle;
@@ -169,41 +174,102 @@ p {
 
 .flex-container {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     flex-direction: row;
+    width: 75%;
+    margin: auto;
   }
 
-.flex-container>div {
+.flex-container-1 {
+    background-color: #ffffff;
+    margin: 15px;
+    font-size: 20px;
+    flex-grow: 4;
+    width: 100%;
+    height: auto;
+}
+
+.flex-container-2 {
+    background-color: #ffffff;
+    margin: 15px;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.flex-container-header {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: row;
+    width: 75%;
+    margin: auto; 
+  }
+
+.flex-container-header-loginpg {
     background-color: #ffffff;
     margin: 5px;
-    padding:10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: middle;
+}
+
+.flex-container-header-1 {
+    background-color: #ffffff;
+    margin: 5px;
+    padding:0;
+    font-size: 50px;
+    flex-grow: 4;
+}
+
+.flex-container-header-2 {
+    background-color: #ffffff;
+    margin: 5px;
+    padding:0;
+    font-size: 20px;
+    flex-grow: 1;
+    color: darkslategray;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.flex-container-indexpage {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 5vw;
+  }
+
+.flex-container-indexpage>div {
+    background-color: #ffffff;
+    margin: 5px;
+    padding:2vw;
     font-size: 20px;
 }
 
 img {
-padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: auto;
-    width: 75%;
+    width: 100%;
+    height: auto;
 }
 
 /*quote box front page*/
 .aboutme {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: #ffffff;
     color: darkslategray;
     font-size: 150%;
-    width: 100%;
-    height:20%;
-    line-height: 60px;
+    width: 75%;
+    margin: auto;
+    line-height: 40px;
     vertical-align: middle;
 }
 
 .w3-content {
-    max-width:980px;
+    max-width:100vw;
     margin:auto;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: #ffffff;
 }
 
 .w3-display-container {
@@ -213,6 +279,10 @@ padding: 0;
 
 .mySlides {
     display:none;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: auto;
 }
 
 .w3-center {
@@ -234,7 +304,7 @@ padding: 0;
 
 .w3-display-bottommiddle {
     position:absolute;
-    left:50%;
+    left:48%;
     bottom:0;
     transform:translate(-50%,0%);
 }
